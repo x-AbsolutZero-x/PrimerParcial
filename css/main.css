@@ -10,7 +10,7 @@
 }
 
 /* El estilo base para moviles */
-body {
+body { /*TOP*/
     background-color: #112935;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -18,9 +18,20 @@ body {
     font-weight: 400;
 }
 
+/*AHHHHHHHHHHHHHH*/
 .header {
     display: flex;
-    justify-content: space-between
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+
+.header nav ul li:nth-last-child(-n+1){
+    background-color: red;
+    color: red;
+}
+
+#menu>li:nth-last-child(-n+1){
+    color:red;
 }
 
 .src-only {
@@ -72,29 +83,36 @@ p{
 }
 
 .big-hero p {
-    font-size: 0.7em;;
+    padding: 0;
+    font-size: 0.7em;
     color: #D7DEE6;
-
 }
 
 /* Social links*/
-.social-links{
+.social-links{  /*General list*/
     list-style: none;
     padding: 0;
-    margin-top: 3em;
+    margin-top: 0em;
+    margin-bottom: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: center
-
+    justify-content: center;
+    
 }
 
-.social-links li a{
+.social-links li a{   /* icon */
+    
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 5em;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 
+
+
+/*MID*/
 .green-area {
     background-color: #0AC693; 
 }
@@ -152,7 +170,7 @@ p{
     line-height: 25px;
 }
 
-/* About */
+/* About */  /* BOT*/
 
 .about{
     margin-top: 2em;
@@ -227,10 +245,12 @@ p{
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
+    
 }
 
 footer .social-links {
     margin: 0;
+   
 }
 
 .menu {
@@ -285,10 +305,12 @@ footer .social-links {
 
     .show-desktop {
         display: block;
+        margin-bottom: 3em;
     }
 
     .hide-desktop {
         display: none;
+        margin-bottom: 3em;
     }
 
     .menu {
