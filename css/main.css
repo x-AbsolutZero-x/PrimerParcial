@@ -32,14 +32,20 @@ body { /*TOP*/
     padding: 0.1em 0.5em 0.1em 0.5em;
     margin: 0.1em 1em;
 }
-
-.header nav ul li:nth-last-child(-n+1){
-    background-color: red;
-    color: red;
+/*
+.header li:last-child a:last-child{
+    color:red;
 }
 
-#menu>li:nth-last-child(-n+1){
+--same--
+
+#menu>li:nth-last-child(-n+1)>a:nth-last-child(-n+1){
     color:red;
+}
+*/
+
+#menu>li:last-child>a:last-child{ /*CONTACTO color:red*/
+    color: red;
 }
 
 .src-only {
