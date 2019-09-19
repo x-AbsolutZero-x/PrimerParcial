@@ -42,11 +42,16 @@ body { /*TOP*/
 #menu>li:nth-last-child(-n+1)>a:nth-last-child(-n+1){
     color:red;
 }
-*/
 
-#menu>li:last-child>a:last-child{ /*CONTACTO color:red*/
+
+#menu>li:last-child>a:last-child{ 
     color: red;
 }
+*/
+#menu>li>a:hover{ 
+    color:red;
+}
+
 
 .src-only {
     display: none;
