@@ -2,96 +2,88 @@
 
 /* El CSS siguiente esta pensando primero para moviles y luego para 
    Escritiorio*/
-*, ::before, ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: calc(0.5em + 1vh);
+*, ::before, ::after { /*Se aplican propiedades de ajuste antes y despues a cada clase*/
+    margin: 0; /*margen 0*/
+    padding: 0; /*padding 0*/
+    box-sizing: border-box; /**/
+    font-size: calc(0.5em + 1vh); /*Se calcula el tamaño de la letra en proporcion a la ventana*/
 }
 
 /* El estilo base para moviles */
-body { /*TOP*/
-    background-color: #112935;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 400;
-    font-size: 30px;
+body { /*TOP--Ajustes del body en general*/
+    background-color: #112935; /* color de fondo body*/
+    color: white; /*Color de texto body*/
+    font-family: 'Montserrat', sans-serif; /*Tipo de letra*/
+    text-align: center; /*Se alinea el texto de manera centrada*/
+    font-weight: 400; /*El peso/grosor del tipo de letra*/
+    font-size: 30px;/*Tamaño de la letra*/
 }
 
 /*header/menu-nav/*/
-.header {
-    display: flex;
-    justify-content: space-around;
-    text-transform: capitalize;
-    font-weight: 400;
-    font-size: 100px;
+.header { /*Cabecera, imagen logo, navegacion/menu*/
+    display: flex; /*flex*/
+    justify-content: space-around; /*Se ajusta la distancia entre los objetos tipo flex*/
+    text-transform: capitalize; /*Escribe la primera letra de una palabra en Mayuscula en nav*/
+    font-weight: 400; /*El peso/grosor del tipo de letra*/
+    font-size: 100px;/*Tamaño de la letra*/
 }
 
-#menu{
-    padding: 0.3em 0em 0.5em 0.5em;
-    margin: 0em;
+#menu{/*Barra de navegacion o menu*/
+    padding: 0.3em 0em 0.5em 0.5em; /*Se aplica un padding al nav/menu*/
+    margin: 0em; /*margen 0*/
 }
-/*
-.header li:last-child a:last-child{
-    color:red;
-}
---same--
-#menu>li:nth-last-child(-n+1)>a:nth-last-child(-n+1){
-    color:red;
-}
-#menu>li:last-child>a:last-child{ 
-    color: red;
-}
-*/
-#menu>li>a:hover{ 
-    color:red;
-    margin: 0;
-    padding: 0;
+
+#menu>li>a:hover{ /*Realiza una interaccion en el menu*/
+    color:red; /*coloca en rojo el texto cuando el mouse pasa encima de el*/
+    margin: 0; /*margen 0*/
+    padding: 0; /*padding 0*/
 }
 
 
-.src-only {
+.src-only { /*No cambios*/
     display: none;
 }
 
-.hide-mobile {
+.hide-mobile {/*No cambios*/
     display: none;
 }
 
-p{
-    font-size: 0.75em;
-    padding: 1rem;
-    line-height: 25px;
+p{ /*parrafo*/
+    font-size: 0.75em; /*Tamaño de la letra*/
+    padding: 1rem; /*padding 1rem*/
+    line-height: 25px; /*Espacio entre lineas*/
 }
 
-.logo {
-    width: 10px;
-    margin: 1em;
+.logo:hover {/*interaccion logo*/
+    margin: 1em; /*margen de imagen*/
+    box-shadow: 10px 10px 5px red; /*sombra*/
+    -moz-box-shadow: 0px 10px 5px red;/*sombra moz*/
+    -webkit-box-shadow: 0px 10px 5px red;  /*sombra webkit*/
 }
 
-.header img.logo{
-    width: 150px;
-    margin: 1.5rem 7em 0em 1em;
+
+.header img.logo{ /*imagen logo*/
+    width: 150px; /*ancho de imagen*/
+    margin: 1.5rem 7em 0em 1em; /*margen imagen logo*/
 }
 
-.container>h2,p{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    padding: 0;
+.container>h2,p{ /*selector h2, p*/
+    display: flex; /*flex*/
+    justify-content: center; /*centrar horizontalmente*/
+    margin: 10px; /*margen*/
+    padding: 0; /*padding*/
 }
 
-.options {
-    color: inherit;
-    text-decoration: none;
-    position: relative;
-    top: 30%;
-    right: 95%;
-    font-size: 4rem;
+.options { /*menu de opciones*/
+    color: inherit; /*valor de elemento padre*/
+    text-decoration: none; /*decoracion en texto*/
+    position: relative; /*posicion*/
+    top: 30%; /**/
+    right: 95%; /**/
+    font-size: 4rem; /*Tamaño de la letra*/
 
-    display: flex;
-    align-items: flex-start;
+    display: flex;/*flex*/
+    align-items: flex-start;/*alinea con respecto al eje transversal en el inicio*/
 
 }
 .options i:last-child {
@@ -99,101 +91,110 @@ p{
 }
 
 /* Big area */
-.big-hero img {
-    width: 180px;
-    margin: 5em 2em 0em;
-
+.big-hero img { /*Imagen central*/
+    width: 180px; /*Ancho de imagen*/
+    margin: 5em 2em 0em; /*margen*/
 }
 
-.big-hero h2 {
-    font-size: 1.875em;
-    font-weight: 700;
-    letter-spacing: 0.002em;
-    margin-top: 0.8em ;
+.big-hero img:hover{
+    box-shadow: 10px 10px 5px 10px skyblue; /*sombra*/
+    -moz-box-shadow: 0px 10px 5px 10px skyblue;/*sombra moz*/
+    -webkit-box-shadow: 0px 10px 5px 10px skyblue;  /*sombra explorer*/
+    border-radius: 100px; /*borde de radio 100px*/
 }
 
-.big-hero p {
-    padding: 0;
-    margin-bottom: 0;
-    font-size: 0.7em;
-    letter-spacing: 0.03em;
-    color: #D7DEE6;
+.big-hero h2 { /*cabecera/titulo*/
+    font-size: 1.875em; /*Tamaño de la letra*/
+    font-weight: 700; /*El peso/grosor del tipo de letra*/
+    letter-spacing: 0.002em; /*Espaciado entre letras*/
+    margin-top: 0.8em ; /*margen parte superior*/
+}
+
+.big-hero p { /*parrafos de clase big-hero*/
+    padding: 0; /*padding*/
+    margin-bottom: 0; /*margen inferior*/
+    font-size: 0.7em; /*Tamaño de la letra*/
+    letter-spacing: 0.03em;/*Espaciado entre letras*/
+    color: #D7DEE6; /*color de texto*/
 }
 
 /* Social links*/
 .social-links{  /*General list*/
-    list-style: none;
-    padding: 0;
-    margin-top: 0em;
-    margin-bottom: 2em;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    list-style: none; /*estilo de lista*/
+    padding: 0; /*padding*/
+    margin-top: 0em; /*margen superior*/
+    margin-bottom: 2em; /*margen inferior*/
+    display: flex; /*flex*/
+    flex-direction: row; /*direccion flex en filas*/
+    align-items: flex-start; /**/
+    justify-content: center; /*centrar horizontalmente*/
 }
 
 .social-links li a{   /* icons github and twitter */
-    display: flex;
-    color: #D7DEE6;
-    text-decoration: none;
-    font-size: 11em; /*11em*/
-    padding: 0px 25px;
-    margin: 0;
+    display: flex; /*flex*/
+    color: #D7DEE6; /*color de texto*/
+    text-decoration: none; /*decoracion de texto*/
+    font-size: 11em; /*Tamaño de la letra*/
+    padding: 0px 25px; /*padding*/
+    margin: 0; /*margen*/
+}
+
+.social-links li .fab.fa-github:hover{/*interaccion icono de github*/
+    color:black; /*color*/
+}
+
+
+.social-links li .fab.fa-twitter:hover{/*interaccion icono de twitter*/
+    color:skyblue; /*color*/
 }
 
 /*row skye icon*/
 .hide-mobile.show-desktop{
-    color: #0AC693;
+    color: #0AC693; /*color icono*/
 }
 
+
 .fas.fa-arrow-circle-down{
-    font-size: 4em;
-    margin-bottom: 1em;
-    padding-bottom: 10px;
-    
+    font-size: 4em; /*Tamaño del icono*/
+    margin-bottom: 1em; /*margen superior*/
+    padding-bottom: 10px;/*padding inferior*/
 }
 
 
 
 /*MID*/
-.green-area {
-    background-color: #0AC693; 
+.green-area { /*zona articulos*/
+    background-color: #0AC693; /*color de fondo*/
 }
 
 
-.post {
-    padding: 2em;
-    margin-bottom: -2px;
-    padding-bottom: 0.5em;
+.post { /*contenedor de articulos*/
+    padding: 2em; /*padding*/
+    margin-bottom: -2px; /*margen inferior*/
+    padding-bottom: 0.5em; /*padding inferior*/
 }
-.post h2 {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.125em; /*font-size: 1.125em;*/
-    margin: 0em;
-    margin-bottom: 0;
-}
-
-.post ul {
-    list-style: none;
+.post h2 { /*cabecera/titulo contenedor*/
+    display: flex; /*flex*/
+    justify-content: center; /*centrar horizontalmente*/
+    text-transform: uppercase; /*Transforma en mayusculas el texto*/
+    font-weight: 700; /*El peso/grosor del tipo de letra*/
+    font-size: 1.125em; /*Tamaño de la letra*/
+    margin: 0em;/*margen*/
+    margin-bottom: 0; /*margen inferior*/
 }
 
-.post ul li {
-    min-height: 300px;
-    max-width: 350px;
-    margin: 2rem auto;
-
-    /*Add padding
-    
-        padding: 1.2em 1.5em 0.5em 2.4em;
-*/
-    padding: 1em 2em;
-
+.post ul { /*lista desordenada post*/
+    list-style: none; /*ningun estilo de lista*/
 }
 
-.post ul li article {
+.post ul li { /*propiedades de listas*/
+    min-height: 300px; /*altura minimo*/
+    max-width: 350px; /*tamaño maximo*/
+    margin: 2rem auto; /*margen*/
+    padding: 1em 2em;/*padding*/
+}
+
+.post ul li article { /*propiedades articulos*/
     overflow: hidden;
     border-radius: 10px;
     background-color: #ffffff;
@@ -207,6 +208,17 @@ p{
     width: 100%;
     object-fit: cover;
 }
+
+
+.post ul li article:hover{ /*interaccion con articulos*/
+    transition: transform 1s; /*tiempo de transicion*/
+    transform: scale(1.1); /*escalado*/
+}
+
+.post ul li article:hover>img{ /*interaccion imagen*/
+    transform: rotateY(180deg); /*rotacion imagen 180 grados*/
+}
+
 
 .post article h3 {
     color: #0D5061;
@@ -231,18 +243,18 @@ p{
 
 /* About */  /* BOT*/
 
-.about .container{
-    display: grid;
-    grid-gap: 10px;
-    justify-content: center;
-    grid-template-rows: 100px 600px;
-    grid-template-columns: minmax(300px, auto) minmax(300px, auto);
+.about .container{  /*contenedor de about*/
+    display: grid; /* Se añade la propiedad grid*/
+    grid-gap: 10px; /* Se da un espaciado entre cada fila y columna*/
+    justify-content: center; /*centrar horizontalmente*/
+    grid-template-rows: 100px 600px; /*Se crean 2 filas*/
+    grid-template-columns: minmax(300px, auto) minmax(300px, auto); /*Ajustes de tamaño min y max*/
 }
 
 .about .container>h2{
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    align-items: center;
+    grid-column-start: 1; /*Se inicia el h2 desde la columna 1*/
+    grid-column-end: span 2; /*Recorre hasta llegar a la columna 2*/
+    align-items: center; /*Se centra el h2*/
 }
 
 .about .container>.bio-info{
