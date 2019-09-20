@@ -36,14 +36,10 @@ body { /*TOP*/
 .header li:last-child a:last-child{
     color:red;
 }
-
 --same--
-
 #menu>li:nth-last-child(-n+1)>a:nth-last-child(-n+1){
     color:red;
 }
-
-
 #menu>li:last-child>a:last-child{ 
     color: red;
 }
@@ -235,15 +231,32 @@ p{
 
 /* About */  /* BOT*/
 
-.about{
-    margin-top: 2em;
+.about .container{
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    grid-template-rows: 100px 600px;
+    grid-template-columns: minmax(300px, auto) minmax(300px, auto);
 }
 
-/*
-.about .container>.bio-info + .contact{
-    display: inline-block;
+.about .container>h2{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    align-items: center;
 }
-*/
+
+.about .container>.bio-info{
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    margin: 0px 50px 100px 100px;
+}
+
+.about .container>.contact{
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    margin: 0px 100px 100px 50px;
+}
+
 
 .about h2 {
     text-transform: uppercase;
@@ -252,13 +265,6 @@ p{
     margin: 2em;
 }
 
-.bio-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: left;
-}
 
 .bio-info img{
    width: 200px;
@@ -275,8 +281,6 @@ p{
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
     text-align: left;
     padding: 0px 1em;
 }
