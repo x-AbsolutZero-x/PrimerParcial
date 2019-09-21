@@ -397,6 +397,410 @@ footer>p{
     
 }
 
+@media only screen and (min-width: 1024px) {
+
+       /*TODO: FALTA CSS */
+
+
+    .show-desktop {
+        display: block;
+        margin-bottom: 3em;
+    }
+
+    .hide-desktop {
+        display: none;
+        margin-bottom: 3em;
+    }
+    /*BACK IN TIME*/
+
+    body { /*TOP--Ajustes del body en general*/
+    background-color: #112935; /* color de fondo body*/
+    color: white; /*Color de texto body*/
+    font-family: 'Montserrat', sans-serif; /*Tipo de letra*/
+    text-align: center; /*Se alinea el texto de manera centrada*/
+    font-weight: 400; /*El peso/grosor del tipo de letra*/
+    font-size: 30px;/*Tamaño de la letra*/
+    }
+
+    /*header/menu-nav/*/
+    .header { /*Cabecera, imagen logo, navegacion/menu*/
+        display: flex; /*flex*/
+        justify-content: space-around; /*Se ajusta la distancia entre los objetos tipo flex*/
+        text-transform: capitalize; /*Escribe la primera letra de una palabra en Mayuscula en nav*/
+        font-weight: 400; /*El peso/grosor del tipo de letra*/
+        font-size: 100px;/*Tamaño de la letra*/
+    }
+
+    #menu{/*Barra de navegacion o menu*/
+        padding: 0.3em 0em 0.5em 0.5em; /*Se aplica un padding al nav/menu*/
+        margin: 0em; /*margen 0*/
+    }
+
+    #menu>li>a:hover{ /*Realiza una interaccion en el menu*/
+        color:red; /*coloca en rojo el texto cuando el mouse pasa encima de el*/
+        margin: 0; /*margen 0*/
+        padding: 0; /*padding 0*/
+    }
+
+
+    .src-only { /*No cambios*/
+        display: none;
+    }
+
+    .hide-mobile {/*No cambios*/
+        display: none;
+    }
+
+    p{ /*parrafo*/
+        font-size: 0.75em; /*Tamaño de la letra*/
+        padding: 1rem; /*padding 1rem*/
+        line-height: 25px; /*Espacio entre lineas*/
+    }
+
+    .logo:hover {/*interaccion logo*/
+        margin: 1em; /*margen de imagen*/
+        box-shadow: 10px 10px 5px red; /*sombra*/
+        -moz-box-shadow: 0px 10px 5px red;/*sombra moz*/
+        -webkit-box-shadow: 0px 10px 5px red;  /*sombra webkit*/
+    }
+
+
+    .header img.logo{ /*imagen logo*/
+        width: 150px; /*ancho de imagen*/
+        margin: 1.5rem 7em 0em 1em; /*margen imagen logo*/
+    }
+
+    .container>h2,p{ /*selector h2, p*/
+        display: flex; /*flex*/
+        justify-content: center; /*centrar horizontalmente*/
+        margin: 10px; /*margen*/
+        padding: 0; /*padding*/
+    }
+
+    .options { /*menu de opciones*/
+        color: inherit; /*valor de elemento padre*/
+        text-decoration: none; /*decoracion en texto*/
+        position: relative; /*posicion*/
+        top: 30%; /**/
+        right: 95%; /**/
+        font-size: 4rem; /*Tamaño de la letra*/
+
+        display: flex;/*flex*/
+        align-items: flex-start;/*alinea con respecto al eje transversal en el inicio*/
+
+    }
+    .options i:last-child {
+        font-size: 1.6rem;
+    }
+
+    /* Big area */
+    .big-hero img { /*Imagen central*/
+        width: 180px; /*Ancho de imagen*/
+        margin: 5em 2em 0em; /*margen*/
+    }
+
+    .big-hero img:hover{
+        box-shadow: 10px 10px 5px 10px skyblue; /*sombra*/
+        -moz-box-shadow: 0px 10px 5px 10px skyblue;/*sombra moz*/
+        -webkit-box-shadow: 0px 10px 5px 10px skyblue;  /*sombra explorer*/
+        border-radius: 100px; /*borde de radio 100px*/
+
+        transition: transform 1s; /*tiempo de transicion*/
+        transform: scale(1.1); /*escalado*/
+    }
+
+    .big-hero h2 { /*cabecera/titulo*/
+        font-size: 1.875em; /*Tamaño de la letra*/
+        font-weight: 700; /*El peso/grosor del tipo de letra*/
+        letter-spacing: 0.002em; /*Espaciado entre letras*/
+        margin-top: 0.8em ; /*margen parte superior*/
+    }
+
+    .big-hero p { /*parrafos de clase big-hero*/
+        padding: 0; /*padding*/
+        margin-bottom: 0; /*margen inferior*/
+        font-size: 0.7em; /*Tamaño de la letra*/
+        letter-spacing: 0.03em;/*Espaciado entre letras*/
+        color: #D7DEE6; /*color de texto*/
+    }
+
+    /* Social links*/
+    .social-links{  /*General list*/
+        list-style: none; /*estilo de lista*/
+        padding: 0; /*padding*/
+        margin-top: 0em; /*margen superior*/
+        margin-bottom: 2em; /*margen inferior*/
+        display: flex; /*flex*/
+        flex-direction: row; /*direccion flex en filas*/
+        align-items: flex-start; /**/
+        justify-content: center; /*centrar horizontalmente*/
+    }
+
+    .social-links li a{   /* icons github and twitter */
+        display: flex; /*flex*/
+        color: #D7DEE6; /*color de texto*/
+        text-decoration: none; /*decoracion de texto*/
+        font-size: 11em; /*Tamaño de la letra*/
+        padding: 0px 25px; /*padding*/
+        margin: 0; /*margen*/
+    }
+
+    .social-links li .fab.fa-github:hover{/*interaccion icono de github*/
+        color:black; /*coloca en negro el icono*/
+    }
+
+
+    .social-links li .fab.fa-twitter:hover{/*interaccion icono de twitter*/
+        color:skyblue; /*coloca en azul cielo el icono*/
+    }
+
+    /*row skye icon*/
+    .hide-mobile.show-desktop{
+        color: #0AC693; /*color icono*/
+    }
+
+
+    .fas.fa-arrow-circle-down{
+        font-size: 4em; /*Tamaño del icono*/
+        margin-bottom: 0.5em; /*margen superior*/
+        padding-bottom: 5px;/*padding inferior*/
+    }
+
+
+
+    /*MID*/
+    .green-area { /*zona articulos*/
+        background-color: #0AC693; /*color de fondo*/
+    }
+
+
+    .post { /*contenedor de articulos*/
+        padding: 2em; /*padding*/
+        margin-bottom: -2px; /*margen inferior*/
+        padding-bottom: 0.5em; /*padding inferior*/
+    }
+    .post h2 { /*cabecera/titulo contenedor*/
+        display: flex; /*flex*/
+        justify-content: center; /*centrar horizontalmente*/
+        text-transform: uppercase; /*Transforma en mayusculas el texto*/
+        font-weight: 700; /*El peso/grosor del tipo de letra*/
+        font-size: 1.125em; /*Tamaño de la letra*/
+        margin: 0em;/*margen*/
+        margin-bottom: 0; /*margen inferior*/
+    }
+
+    .post ul { /*lista desordenada post*/
+        list-style: none; /*ningun estilo de lista*/
+    }
+
+    .post ul li { /*propiedades de listas*/
+        min-height: 300px; /*altura minimo*/
+        max-width: 350px; /*anchura maximo*/
+        margin: 2rem auto; /*margen*/
+        padding: 1em 2em;/*padding*/
+    }
+
+    .post ul li article { /*propiedades articulos*/
+        overflow: hidden; /**/
+        border-radius: 10px; /*borde de radio 10px*/
+        background-color: #ffffff; /*color de fondo*/
+        text-align: left;/*texto ajustado a la izquierda*/
+        padding-bottom: 2em; /*padding-bottom: 2em;*/
+
+    }
+
+    .post article img{ /*propiedades de la imagen del articulo*/
+        height: 150px; /*altura*/
+        width: 100%; /*anchura*/
+        object-fit: cover; /*el objeto se recorta si la relacion de aspecto no coincide*/
+    }
+
+
+    .post ul li article:hover{ /*interaccion con articulos*/
+        transition: transform 1s; /*tiempo de transicion*/
+        transform: scale(1.1); /*escalado*/
+    }
+
+    .post ul li article:hover>img{ /*interaccion imagen*/
+        transform: rotateY(180deg); /*rotacion imagen 180 grados*/
+    }
+
+
+    .post article h3 { /*propiedades encabezado del articulo*/
+        color: #0D5061;  /*color de texto*/
+        margin-right: 10px; /*margen derecho*/
+        margin-left: 10px; /*margen izquierdo*/
+        margin-top: 1em; /*margen superior*/
+        padding: 0em 1rem; /*padding*/
+        font-size: 0.9em; /*Tamaño de la letra*/
+        white-space: nowrap; /*especifica como debe adaptarse de alto y ancho de su contenedor*/
+        overflow: hidden;
+        text-overflow: ellipsis; /*Ajusta el texto si se desvorda con ...*/
+
+    }
+
+    .post article p { /*propiedades de parrafo del articulo*/
+        color:#112935; /*color de texto*/
+        font-size: 0.75em; /*Tamaño de la letra*/
+        padding: 1rem; /*padding*/
+        line-height: 18px; /*Espacio entre lineas*/
+        padding-top: 0; /*padding-top*/
+    }
+
+    /* About */  /* BOT*/
+
+    .about .container{  /*contenedor de about*/
+        display: grid; /* Se añade la propiedad grid*/
+        grid-gap: 10px; /* Se da un espaciado entre cada fila y columna*/
+        justify-content: center; /*centrar horizontalmente*/
+        grid-template-rows: 100px 600px; /*Se crean 2 filas*/
+        grid-template-columns: minmax(250px, auto) minmax(250px, auto); /*Ajustes de tamaño min y max*/
+    }
+
+    .about .container>h2{ /*interaccion/comportamiento grid en h2*/
+        grid-column-start: 1; /*Se inicia el h2 desde la columna 1*/
+        grid-column-end: span 2; /*Recorre hasta llegar a la columna 2*/
+        align-items: center; /*Se centra el h2*/
+    }
+
+    .about .container>.bio-info{ /*interaccion/comportamiento grid en contenedor bio info*/
+        grid-column-start: 1; /*Se inicia el contenedor desde la columna 1*/
+        grid-column-end: span 1; /*Recorre 1*/
+        margin: 0px 50px 0px 50px; /*margen*/
+        
+    }
+
+    .about .container>.contact{ /*interaccion/comportamiento grid */
+        grid-column-start: 2; /*Se inicia en la columna 2*/
+        grid-column-end: span 1;/*Recorre 1*/
+        margin: 0px 200px 0px 10px; /*margen*/
+    }
+
+
+    .about h2 { /*cabecera en contenedor about*/
+        text-transform: uppercase; /*texto se transforma en mayusculas*/
+        font-weight: 700; /*El peso/grosor del tipo de letra*/
+        font-size: 1.125em; /*Tamaño de la letra*/
+        margin: 2em; /*margen*/
+    }
+
+
+    .bio-info img{ /*imagen en contenedor bio info*/
+    width: 150px; /*anchura*/
+    }
+
+    .bio-info p{ /*propiedades del parrafo en el contenedor bio info*/
+        font-size: 13px; /*Tamaño de la letra*/
+        font-weight: 400;/*El peso/grosor del tipo de letra*/
+        padding: 2em; /*padding*/
+        text-align: left;/*texto ajustado a la izquierda*/
+        line-height: 18px;/*Espacio entre lineas*/
+        letter-spacing: 0.0002em; /*Espaciado entre letras*/
+        object-fit: cover;
+    }
+
+    .contact { /*contenedor contacto*/
+        display: flex; /*flex*/
+        flex-direction: column; /*direccion columna*/
+        text-align: left; /*texto ajustado a la izquierda*/
+        padding: 0px 1em; /*padding*/
+    }
+
+    .contact * + * {
+        margin-top: 1.5em; /*coloca un margen superior*/
+    }
+
+    .contact-form { /*formulario contacto*/
+        display: flex; /*flex*/
+        flex-direction: column; /*direccion columna*/
+        font-size: 0.5;
+        object-fit: cover;
+    }
+
+    .contact-form input, .contact-form textarea{/*propiedades al input y textarea de la clase contacto*/
+        padding: 1rem 2rem; /*padding*/
+        border: none; /*borde*/
+        border-radius: 0px 2em; /*borde de radio*/
+        font-size: 1em; /*Tamaño de la letra*/
+        width: 100%; /*anchura*/
+    }
+
+    .contact-form .message{
+        resize:none;
+    }
+
+    /* Decorando placeholder */
+
+    ::-webkit-input-placeholder { 
+        color: #D7DEE6;  /*color explorer*/
+    } 
+    
+    :-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; /*color moz 18-*/} 
+    
+    ::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; /*color moz 19+*/} 
+    
+    :-ms-input-placeholder { color: #D7DEE6; } /*color*/
+
+    .contact-form input[type=submit] { /*boton submit*/
+        background-color: #F74442; /*color de fondo*/
+        font-weight: 400; /*El peso/grosor del tipo de letra*/
+        color: white; /*color de texto*/
+        font-size: 1rem; /*Tamaño de la letra*/
+    }
+
+    .black-decoration{
+        background-image: url("../images/decoracion_oscura_small.svg");
+    }
+
+    footer{ /* propiedades footer*/
+        background-color: #0D5061;/*color de fondo*/
+        color:#D7DEE6; /*color de texto*/
+    }
+
+    footer .social-links { /*iconos*/
+        margin-top: 2em; /*margen*/
+        margin-bottom: 0.5em;
+    }
+
+    footer>p{
+        display: flex;
+        flex-direction: row;
+        font-size: 0.55em;
+        margin:0;
+        padding:0;
+        justify-content: middle;
+        align-items: flex-start;
+        padding-bottom: 1em;
+    }
+
+    .menu { /*barra de menu*/
+        background-color: #112935; /*color de fondo*/
+        position: absolute; /*posicion absoluta*/
+        z-index: 20; /*orden de los elementos del menu*/
+        top: 60px; /*superior*/
+        right: 0; /*derecha*/
+        width: 100vw; /*anchura*/
+        height: calc(100vh - 60px); /*altura*/
+    }
+
+    .menu {
+        list-style: none; /*estilo de menu*/
+        text-align: left; /*alineado de texto izquierda*/
+        padding: 1em; /*padding*/
+    }
+    .menu li { /*selector lista*/
+        display: block; /*en bloque*/
+        padding: 0.5em; /*padding*/
+        margin-top: 5px;/*margen superior*/
+    }
+
+    .menu li a {
+        color: white; /*color de texto*/
+        text-decoration: none; /*decoracion de texto*/
+        
+    }
+}
+
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
@@ -439,17 +843,6 @@ footer>p{
         display: flex;
         margin-top: 1em;
     }
-
-
-
-
-    /*TODO: FALTA CSS */
-} 
-
-@media only screen and (min-width: 1024px) {
-
-       /*TODO: FALTA CSS */
-
 
 
 }
